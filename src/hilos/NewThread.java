@@ -4,11 +4,11 @@ package hilos;
 
 public class NewThread implements Runnable {
     
-    String name; // nombre del hilo
-    Thread t;
+    public String name; // nombre del hilo
+    public Thread t;
     
     // Constructor de un nuevo objeto runnable de la clase NewThread:
-    NewThread (String threadname) {
+    public NewThread (String threadname) {
         name = threadname;
         t = new Thread(this, name); // Constructor de un nuevo thread
         System.out.println("Nuevo hilo: " +t);
