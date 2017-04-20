@@ -1,7 +1,7 @@
 
 package hilos;
 
-
+//EJEMPLO RARO
 public class NewThread implements Runnable {
     
     public String name; // nombre del hilo
@@ -21,7 +21,9 @@ public class NewThread implements Runnable {
             
             for (int i = 5; i > 0; i--) {
                 System.out.println(name + ": " + i);
-                Thread.sleep(1000);}
+                System.out.println("Esperando "+t);
+                Thread.sleep(5000);}
+                 System.out.println("Ya no espero "+t);
             
         } catch (InterruptedException ex) {
             
